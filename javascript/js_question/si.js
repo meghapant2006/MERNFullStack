@@ -7,15 +7,15 @@
 // emi = ?
 
 
-// var p=2000;
-// var r=10;
-// var t=2;
-// var si=(p*r*t)/100;
-// var total= p+si;
-// var emi= total/(t*12);
-// console.log("simple intrust is "+si);
-// console.log("total intrust is "+total);
-// console.log("emi intrust is "+emi);
+var p=2000;
+var r=10;
+var t=2;
+var si=(p*r*t)/100;
+var total= p+si;
+var emi= total/(t*12);
+console.log("simple intrust is "+si);
+console.log("total intrust is "+total);
+console.log("emi intrust is "+emi);
 
 
 let principal = 20000;
@@ -33,11 +33,12 @@ let emi = total / months;
 console.log("EMI per month:", emi);
 
 
+
 // WAP to find the area of circle, rectangle, cuboid, square?
 
-var PI = 3.14;
+var pi = 3.14;
 let r = parseFloat(prompt("Enter radius of circle:"));
-let circleArea = PI * r * r;
+let circleArea = pi * r * r;
 console.log("Area of Circle:", circleArea);
 
 let length = parseFloat(prompt("Enter length of rectangle:"));
