@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css display property</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .main {
+        background-color: rgb(205, 113, 128);
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .center {
+        background-color: rgb(229, 172, 98);
+        display: inline-block;
+        height: 40%;
+        width: 70%;
+        padding: 100px 130px;
+      }
+      .box {
+        display: inline-block;
+        height: 200px;
+        width: 150px;
+        border: 2px solid black;
+        margin-left: 10px;
+        padding-left: 50px;
+      }
+      .box1{
+        background-color: #5aa8c9;
+      }
+      .box2{
+        background-color: #399f59;
+      }
+      .box3{
+        background-color: #a762cf;
+      }
+      .box4{
+        background-color: #469a86;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <div class=" box1 box">1</div>
+        <div class=" box2 box">2</div>
+        <div class=" box3 box">3</div>
+        <div class=" box4 box">4</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+     <form method="get" class="form" enctype="multipart/form-data">
+      <label> your Name</label>
+      <input type="text" name=" name" placeholder="Enter your name"  maxlength="20" minlength="4" required>
+      <br>
+      
+      <label> your Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <br>
+
+      <label> password</label>
+      <input type="password" placeholder="Enter your password"  id="password" required /><button type ="button" id ="pass" onclick="fun()" class="fa fa-eye"></button>
+      <br>
+
+      <label>phone</label>
+      <input type="number" id="phone" placeholder="enter phone no" maxlength="10" pattern="[6-9]{1}[0-9]{9}" required>
+      <br>
+
+      <label>color</label>
+      <input type="color" id="color" placeholder="enter color" required>
+      <br>
+
+      <label for="range">range</label>
+      <input type="range" name="range" min="0" max="100" value="100" id="range" oninput="fun()">
+      <span id="rangeValue">100</span>
+      <br>
+
+      <label for="radio">radio</label>
+      <input type="radio" id="radio">
+      <br>
+
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender">male
+      <input type="radio" name="gender">Female
+      <input type="radio" name="gender">other
+      <br>
+
+      <label for="language">choose language</label>
+      <input type="checkbox" name="language" value="Hindi">Hindi
+      <input type="checkbox" name="language" value="english">English
+      <input type="checkbox" name="language" value="punjabi">Punjabi
+      <br>
+
+      <label>search</label>
+      <input type="search" id="search" placeholder="search">
+      <br>
+      
+      <label>url</label>
+      <input type="url" name="url" placeholder="url">
+      <br>
+
+      <label>age</label>
+      <input type="number" name="age" placeholder="enter age" value="20" min="18" max="40" required >
+      <br>
+
+      <label for="file">file</label>
+      <input type="file" name="file"  multiple required>
+      <br>
+
+      <label for="image">image</label>
+      <input type="image" name="file" src="../public/img1.jpg" height="100" width="100" alt="image">
+      <br>
+
+      <label for="time">time</label>
+      <input type="time" name="time">
+      <br>
+
+      <label for="date">date</label>
+      <input type="date" name="date">
+      <br>
+
+      <label for="datetime">date and time</label>
+      <input type="datetime-local" name="datetime">
+      <br>
+
+      <label for="week">week</label>
+      <input type="week" name="week">
+      <br>
+
+      <label for="month">month</label>
+      <input type="month" name="month">
+      <br>
+
+      <label for="hidden">hidden</label>
+      <input type="hidden" name="hidden" value="hidden">
+
+      <!-- <input type="button" value="button">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit"> -->
+
+      <br>
+      <button type="button">button</button>
+      <button type="reset">reset</button>
+      <button type="submit">Submit</button>
+      <br>
+       
+      <label for="city">City</label>
+      <select id="city" name="city">
+            <option value="delhi">delhi</option>
+            <option value="mumbai">mumbai</option>
+            <option value="bangalore">bangalore</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="hyderabad">hyderabad</option>
+       </select>
+       <br>
+      
+        <select>
+            <optgroup label="delhi">
+                <option value="delhi"> delhi</option>
+                <option value="south delhi">south delhi</option>
+                <option value="mayur vihar">mayur vihar</option>
+                <option value="india gate">india gate</option>
+            </optgroup>
+            <optgroup label="south mumbai">
+                <option value="mumbai">mumbai</option>
+                <option value="south mumbai">south mumbai</option>
+                <option value="north mumbai">north mumbai</option>
+                <option value="central mumbai">central mumbai</option>
+            </optgroup>
+       </select>
+       <br>
+       
+       <label for="textarea">enter your comment</label>
+       <textarea placeholder="Enter feedback....."></textarea>
+       <br>
+
+       <fieldset>
+        <legend>Admin-login</legend>
+        <label for="name">Name :</label>
+        <input type="text" for="name" placeholder="name....">
+        <br>
+        <label for="password">Password :</label>
+        <input type="text" for="password" placeholder="password....">
+        <br>
+        <button id="login">Login</button>
+       </fieldset>
+       <br>
+
+
+       <input list="data" name="data">
+       <datalist id="data">
+                <option value="Delhi">
+                <option value="Mumbai">
+                <option value="Bangalore">
+                <option value="Chennai">
+                <option value="Kolkata">
+                <option value="Hyderabad">
+            </datalist>
+
+
+      
+     </form>
+
+
+     <script>
+        var pass= document.getElementById("password");
+        var pass=document.getElementById("pass");
+        function fun(){
+            if(password.type=="password"){
+                password.type="text";
+                pass.classList.remove("fa-eye");
+                pass.classList.add("fa-eye-slash");
+            }
+            else{
+                password.type="password";
+                pass.classList.remove("fa-eye-slash");
+                pass.classList.add("fa-eye");
+            }
+        }
+
+        var range = document.getElementById("range");
+        var rangeValue = document.getElementById("rangeValue");
+        function fun(){
+            rangeValue.innerHTML = range.value;
+        }
+
+     </script>
+
+</body>
+</html>

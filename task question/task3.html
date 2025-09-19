@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: space-between;
+        }
+        .main img{
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            padding: auto;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 570px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+            }
+            .main img {
+               width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+       <img src="../public/img1.jpg" alt="">
+       <img src="../public/img5.jpg" alt="">
+       <img src="../public/img3.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Account</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background: #23232b;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .center {
+            /* background-image:url('../Css/img/P3.png');
+            background-size: cover;
+            background-position: center; */
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            width: 400px;
+            padding: 0;
+            overflow: hidden;
+        }
+        .header {
+            background: #bdbd5e;
+            color: #fff;
+            text-align: center;
+            padding: 24px 0 16px 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        form {
+            padding: 32px 32px 24px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        .material-icons {
+            color: #bdbdbd;
+            margin-right: 12px;
+            font-size: 21px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            width: 100%;
+            color: #333;
+            padding: 8px 0;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-top: 8px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color: #888;
+            gap: 6px;
+        }
+        .register-btn {
+            margin-top: 24px;
+            background: #d78a8a;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .register-btn:hover {
+            background: #e01382;
+        }
+        .center {
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <div class="header">REGISTER NEW ACCOUNT</div>
+            <form>
+                <div class="input-group">
+                    <span class="material-icons">person</span>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <span class="material-icons">email</span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <span class="material-icons">lock</span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <span class="material-icons">lock</span>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-group">
+                    <span class="material-icons">phone</span>
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        Remember Me
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        Subscribe to Newsletter
+                    </label>
+                </div>
+                <button type="submit" class="register-btn">REGISTER</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

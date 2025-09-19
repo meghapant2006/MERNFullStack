@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+</head>
+<style>
+    .boxes{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        /* position: relative;
+        position: absolute;
+        left: 100px;
+        top: 20px; */
+
+    }
+
+ /* boxes end........................... */
+
+    * {
+        margin: 0;
+    }
+    .main{
+        width: 100vw;   
+        height: 100vh;
+        background-color: rgb(71, 133, 138);
+        display: grid;
+    }
+    .center{
+        width: 70%;
+        height: 30%;
+        background-color: #67aeba;
+        padding: 100px;
+        margin-left: 90px;
+    }
+    .box{
+        height: 160px;
+        width: 150px;
+        border: 2px solid black;
+        display: inline-block;
+    }
+     .box1{
+        background-color: rgb(186, 141, 118);
+    }
+     .box2{
+        background-color: rgb(106, 117, 153);
+    }
+     .box3{
+        background-color: rgb(155, 118, 161);
+        position: relative;
+        left: 50px; 
+        top: 30px;
+        /* right: 50px;
+        bottom: 30px; */
+
+    }
+     .box4{
+        background-color: rgb(28, 118, 146);
+    }
+     .box5{
+        background-color: rgb(119, 173, 121);
+    }
+
+ /* box end........................... */
+
+
+     * {
+        margin: 0;
+    }
+    .mains{
+        width: 100vw;   
+        height: 100vh;
+        background-color: rgb(71, 133, 138);
+        display: grid;
+    }
+    .centerr{
+        width: 70%;
+        height: 30%;
+        background-color: #67aeba;
+        padding: 100px;
+        margin-left: 90px;
+        position: relative;
+    }
+    .boxx{
+        height: 160px;
+        width: 150px;
+        border: 2px solid black;
+        display: inline-block;
+    }
+    .boxx1{
+        background-color: rgb(186, 141, 118);
+    }
+     .boxx2{
+        background-color: rgb(106, 117, 153);
+    }
+     .boxx3{
+        background-color: rgb(155, 118, 161);
+        position: absolute;
+        /* left: 50px;  */
+        /* top: 10px;  */
+        right: 50px;
+        bottom: 10px; 
+
+    }
+     .boxx4{
+        background-color: rgb(28, 118, 146);
+    }
+     .boxx5{
+        background-color: rgb(119, 173, 121);
+    }
+
+
+    .boxx .boxx3 #absolute{
+        background-color: rgb(155, 118, 161);
+        position: absolute;
+        top: 20px;
+        left: 100px; 
+    }
+
+
+
+</style>
+<body>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, at!
+    </p>
+    <div class="boxes"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, asperi,</p>
+
+
+    <br><br>
+
+
+    <div class="main">
+        <h2> 1. Position example Relative</h2>
+        <div class="center">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+
+   <div class="mains">
+        <h2> 2. Position example Absolute</h2>
+        <div class="centerr">
+            <div class="boxx boxx1">1</div>
+            <div class="boxx boxx2">2</div>
+            <div class="boxx boxx3" id="absolute">
+                <!-- <img src="../../public/img1.jpg" width="150" height="160" alt=""> -->
+                 3
+            </div>
+            <div class="boxx boxx4">4</div>
+            <div class="boxx boxx5">5</div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
