@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position property</title>
-</head>
-<style>
+
     .boxes{
         width: 200px;
         height: 200px;
@@ -121,49 +114,3 @@
 
 
 
-</style>
-<body>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, at!
-    </p>
-    <div class="boxes"></div>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, asperi,</p>
-
-
-    <br><br>
-
-
-    <div class="main">
-        <h2> 1. Position example Relative</h2>
-        <div class="center">
-            <div class="box box1">1</div>
-            <div class="box box2">2</div>
-            <div class="box box3">3</div>
-            <div class="box box4">4</div>
-            <div class="box box5">5</div>
-        </div>
-    </div>
-
-
-    <br><br>
-
-
-
-   <div class="mains">
-        <h2> 2. Position example Absolute</h2>
-        <div class="centerr">
-            <div class="boxx boxx1">1</div>
-            <div class="boxx boxx2">2</div>
-            <div class="boxx boxx3" id="absolute">
-                <!-- <img src="../../public/img1.jpg" width="150" height="160" alt=""> -->
-                 3
-            </div>
-            <div class="boxx boxx4">4</div>
-            <div class="boxx boxx5">5</div>
-        </div>
-    </div>
-
-
-
-</body>
-</html>
