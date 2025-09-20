@@ -1,0 +1,32 @@
+ 
+        .box{
+            min-height: 100px;
+            max-height: 400px;
+            min-width: 100px;
+            max-width: 400px;
+            border: 2px solid black;
+            margin: 100px;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: scroll;
+        } 
+
+        .box1{
+            border: 10px solid blue;
+            height: 200px;
+            width: 300px;
+            margin-top: 200px;
+            margin-left: 200px;
+            padding: 50px;
+            /* border-top-right-radius: 50px; 
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px; */
+
+            /* border-radius: 50px; */
+            border-radius: 50%;
+        }
+
+
+
+    

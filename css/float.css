@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>float css</title>
-  <style>
+ 
     main{
     height: 1400px;
     width: 100%;
@@ -52,16 +46,4 @@
     background-color: orange;
     float: left;
 }
-  </style>
-  </head>
-  <body>
-    <div class="main">
-      <div class="box box1">a</div>
-      <div class="box box2">b</div>
-      <div class="box box3">c</div>
-      <div class="box box4">d</div>
-      <div class="box box5">e</div>
-      <div class="box box6">f</div>
-    </div>
-  </body>
-</html>
+  
