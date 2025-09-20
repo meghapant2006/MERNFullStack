@@ -1,0 +1,30 @@
+ .main {
+     display: flex;
+     /* flex-direction: column-reverse; */
+     /* flex-direction: row; */
+     /* flex-direction: row-reverse; */
+
+     /* justify-content: space-around; */
+     justify-content: space-between;
+     /* justify-content: space-evenly; */
+ }
+
+ .box {
+     height: 200px;
+     width: 200px;
+     border: 2px solid black;
+     margin: 30px;
+     color: black;
+ }
+
+ .box1 {
+     background-color: rgb(138, 45, 61);
+ }
+
+ .box2 {
+     background-color: rgb(222, 18, 52);
+ }
+
+ .box3 {
+     background-color: rgb(169, 35, 57);
+ }
